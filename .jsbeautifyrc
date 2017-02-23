@@ -1,0 +1,13 @@
+{
+    "brace_style": "collapse-preserve-inline", // [collapse|expand|end-expand|none]
+    "wrap_line_length": 100,
+    "indent_size": 4,
+    "indent_char": " ",
+    "preserve_newlines": true,
+    "max_preserve_newlines": 2,
+    "css":
+    {
+        "indent_size": 2
+    },
+    "end_with_newline": true
+}

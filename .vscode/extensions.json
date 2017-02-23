@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "MarinhoBrandao.Angular2Tests",
+        "johnpapa.Angular2",
+        "natewallace.angular2-inline",
+		"HookyQR.beautify",
+		"joelday.docthis",
+		"eg2.tslint",
+		"rbbit.typescript-hero",
+		"robertohuertasm.vscode-icons"
+    ]
+}
