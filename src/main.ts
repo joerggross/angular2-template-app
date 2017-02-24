@@ -5,29 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import {
-    App,
+    allComponents,
     providers,
-    routes
+    routes,
+    App
 } from './app';
 
-import {
-    Main,
-    Start,
-    About
-} from './app/containers';
-
-import {
-    AppBar
-} from './app/ui';
-
 @NgModule({
-    declarations: [
-        App,
-        Main,
-        About,
-        Start,
-        AppBar
-    ],
+    declarations: allComponents,
     providers: providers,
     imports: [
         BrowserModule,
