@@ -3,6 +3,8 @@ include:#
   - requires to organize each page in a sperarate module
 - authorization/login example
 - i18n example
+  https://github.com/ngx-translate/core or https://angular.io/docs/ts/latest/cookbook/i18n.html
+  which way to go?
 - forms example with custom validation
 - extended webpack config:
   - mimify, uglify, etc
