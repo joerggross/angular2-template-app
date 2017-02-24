@@ -7,12 +7,12 @@ export { routes } from './routes'
 
 const mapValuesToArray = (obj) => Object.keys(obj).map(key => obj[key]);
 
-// export all services 
+// export all services, simplifies use in main.ts
 export const providers = [
     ...mapValuesToArray(services)
 ]
 
-// export all components 
+// export all components, simplifies use in main.ts
 export const allComponents = [
         ...mapValuesToArray(uiComponents)
     ]

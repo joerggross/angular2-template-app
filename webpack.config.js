@@ -13,8 +13,7 @@ var config = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].bundle.js',
-    sourceMapFilename: '[name].map',
-    chunkFilename: '[id].chunk.js'
+    sourceMapFilename: '[name].map'
   },
   module: {
     loaders: [
@@ -25,9 +24,7 @@ var config = {
     ]
   },
 
-  plugins: [
-    new webpack.optimize.CommonsChunkPlugin({ name: ['polyfills', 'vendor', 'main'].reverse(), minChunks: Infinity }),
-  ],
+  plugins: [],
 
   resolve: {
     extensions: ['', '.ts', '.js', '.json'],

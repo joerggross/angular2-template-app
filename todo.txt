@@ -1,0 +1,8 @@
+include:#
+- lazy loading for pages: https://github.com/brandonroberts/angular-router-loader
+  - requires to organize each page in a sperarate module
+- authorization/login example
+- i18n example
+- forms example with custom validation
+- extended webpack config:
+  - mimify, uglify, etc
