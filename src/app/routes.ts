@@ -9,9 +9,10 @@ export const routes: ModuleWithProviders = RouterModule.forRoot([{
         canActivate: [],
         children: [
             { path: '', component: Start },
+            { path: 'start', component: Start },
             { path: 'about', component: About }
         ]
     },
 //    { path: 'auth', component: Auth },
-    { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: 'start' }
 ])
