@@ -1,10 +1,23 @@
-include:
+TODOs include:
 - lazy loading for pages: https://github.com/brandonroberts/angular-router-loader
-  - requires to organize each page in a sperarate module
+  - requires to organize/bundle each page in a sperarate module (?)
+    -> see down below: bundling of modules
 - authorization/login example
 - i18n example
-  https://github.com/ngx-translate/core or https://angular.io/docs/ts/latest/cookbook/i18n.html
-  which way to go?
+    https://github.com/ngx-translate/core or https://angular.io/docs/ts/latest/cookbook/i18n.html
+    which way to go?
 - forms example with custom validation
-- extended webpack config:
-  - mimify, uglify, etc
+
+- Define Polyfills: 
+    https://angular.io/docs/ts/latest/guide/browser-support.html#!#core-es6
+
+- Build-Configuration
+    define tsconfig, webpack-config, etc
+    bundling of modules:
+      modules-basics: https://auth0.com/blog/javascript-module-systems-showdown/
+      Optimizing Chunks in webpack : https://github.com/webpack/docs/wiki/optimization#chunks
+      webpack-chunk-example: https://github.com/webpack/webpack/tree/master/examples/multiple-commons-chunks
+      Caching: https://webpack.js.org/guides/caching/
+      use of [chunkhash]
+    mimify, uglify, etc
+    HTML-Webpack-Plugin
