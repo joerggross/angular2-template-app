@@ -1,4 +1,4 @@
-var global_css = require('./global.css');
+const global_css = require('./global.css');
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';

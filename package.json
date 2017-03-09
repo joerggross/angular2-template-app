@@ -1,11 +1,11 @@
 {
-  "name": "Angular2-Template-App",
+  "name": "AngularTemplateApp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "webpack --config webpack.spec.ts --progress --color && karma start",
-    "start": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src"
+    "start": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
