@@ -21,10 +21,13 @@ var config = {
 
     plugins: [
         new ExtractTextPlugin("styles.css"),
+
+        // define order of chunks
         new webpack.optimize.CommonsChunkPlugin({
-            name: "polyfills",
+            name: ['polyfills', 'vendor', 'main'].reverse(),
             minChunks: Infinity
         }),
+
         // This enables tree shaking of the vendor modules
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
@@ -35,11 +38,7 @@ var config = {
         new HtmlWebpackPlugin({
             title: 'My Angular Template App',
             template: 'src/index.html',
-            chunks: [
-                "polyfills",
-                "vendor",
-                "main"
-            ]
+            chunksSortMode: 'dependency',
         }),
     ],
 
@@ -48,6 +47,11 @@ var config = {
 
         ],
         rules: [{
+                test: /\.(jpg|png|svg|gif)$/,
+                loader: 'url-loader',
+                options: {},
+            },
+            {
                 test: /\.ts$/,
                 use: 'awesome-typescript-loader'
             },
@@ -61,7 +65,7 @@ var config = {
         ]
     },
     resolve: {
-        extensions: ['.css', '.ts', '.js', '.json']
+        extensions: ['.css', '.ts', '.js', '.json', '.jpg', '.gif', '.png', '.svg']
     },
     devServer: {
         contentBase: path.join(__dirname, "dist"),
